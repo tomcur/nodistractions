@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Anita Bijsterbosch Theme\n"
+"POT-Creation-Date: 2015-06-07 02:59+0100\n"
+"PO-Revision-Date: 2015-06-07 03:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\anita\\wp-content\\themes"
+"\\nodistractions\\\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx:4c,1,2;esc_attr__;esc_attr_e;"
+"esc_attr_x;esc_html__;esc_html_e;esch_html_x;_n_noop:1,2;"
+"translated_nooped_plural\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oeps! Die pagina werd niet gevonden."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Het ziet er naar uit dat er niks werd gevonden op deze locatie. Misschien "
+"wil je een van de linken hieronder of een zoekopdracht proberen?"
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Meestgebruikte categorie&euml;n"
+
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Probeer te kijken in de maandelijke archieven. %1$s"
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Eén reactie op &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s reacties op &ldquo;%2$s&rdquo;"
+
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr "Reactienavigatie"
+
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr "Oudere reacties"
+
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr "Nieuwere reacties"
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: functions.php:45
+msgid "Primary Menu"
+msgstr "Hoofdmenu"
+
+#: functions.php:100
+msgid "Sidebar"
+msgstr "Zijbalk"
+
+#: functions.php:230
+msgid "Original Edition"
+msgstr "Originele versie"
+
+#: functions.php:243
+msgid "Title"
+msgstr "Titel"
+
+#: functions.php:244
+msgid "Publisher"
+msgstr "Uitgever"
+
+#: functions.php:245
+msgid "ISBN"
+msgstr "ISBN"
+
+#: functions.php:261
+msgid "Languages"
+msgstr "Talen"
+
+#: functions.php:310
+msgid "Previous"
+msgstr "Vorige"
+
+#: functions.php:316
+msgid "Next"
+msgstr "Volgende"
+
+#: functions.php:324
+msgid "No more images to load."
+msgstr "Er zijn geen verdere afbeeldingen om te laden."
+
+#: functions.php:325
+msgid "Loading next set of images..."
+msgstr "De volgende afbeeldingen worden geladen..."
+
+#: header.php:48
+msgid "Skip to content"
+msgstr "Ga naar inhoud"
+
+#: header.php:66
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Berichtennavigatie"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Oudere berichten"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Nieuwe berichten"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Berichtnavigatie"
+
+#: inc/template-tags.php:108 inc/template-tags.php:114
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Geplaatst in %1$s"
+
+#: inc/template-tags.php:116
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Getagd als %1$s"
+
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr "Laat een reactie achter"
+
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr "1 reactie"
+
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr "% reacties"
+
+#: inc/template-tags.php:126 template-parts/content-page.php:26
+msgid "Edit"
+msgstr "Aanpassen"
+
+#: inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr "Categorie: %s"
+
+#: inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr "Auteur: %s"
+
+#: inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr "Jaar: %s"
+
+#: inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr "Maand: %s"
+
+#: inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr "Archieven: %s"
+
+#: inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:181
+msgid "Archives"
+msgstr "Archieven"
+
+#: page-home.php:35
+msgid "ENTER"
+msgstr "ENTER"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: template-books-gallery.php:51
+msgid "more information"
+msgstr "meer informatie"
+
+#: template-downloads-gallery.php:48
+msgid "Permalink"
+msgstr "Permalink"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Niks gevonden"
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klaar om je eerste post te publiceren? <a href=\"%1$s\">Begin hier</a>."
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, maar er zijn geen resultaten gevonden voor je zoektermen. Probeer het "
+"alsjeblieft opnieuw met andere zoektermen."
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Het ziet er naar uit dat we niet niet hebben gevonden waar je voor keek. "
+"Misschien helpt zoeken."
+
+#: template-parts/content-page.php:19 template-parts/content-single.php:23
+#: template-parts/content.php:32
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: template-parts/content.php:25
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lees %s verder <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "E&eacute;n gedachte op &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s gedachtes op &ldquo;%2$s&rdquo;"

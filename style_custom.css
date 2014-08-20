@@ -1,0 +1,31 @@
+.big .content-area
+{
+	max-width: 100% !important;
+}
+
+article.big
+{
+	max-width: 100% !important;
+}
+
+.entry-content img.latex_block
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidebar-site-header
+{
+	background-color: #345696;
+}
+
+.secondary-toggle
+{
+	background-color: #345696 !important;
+}
+
+.secondary-toggle:hover
+{
+	background-color: #3e66b0 !important;
+}
