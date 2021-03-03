@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+	## Simple-lightbox scroll hack
 # Override Jetpack
 --------------------------------------------------------------*/
 
@@ -2204,6 +2205,14 @@ object {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+## Simple-lightbox scroll hack
+--------------------------------------------------------------*/
+
+html.slb_overlay {
+	overflow: hidden;
 }
 
 /*--------------------------------------------------------------
