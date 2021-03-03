@@ -182,62 +182,22 @@ add_action('init', 'init_javascript');
 /*
  * Custom masonry gallery.
  */
-function gallery($id, $class, $perPage, $content, $handle, $minGridWidth=450, $gutterSize=3)
+function gallery($id, $class, $content, $handle, $minGridWidth=450, $gutterSize=3)
 {
-	$page = isset($_GET["masonry-{$id}-page"]) && $_GET["masonry-{$id}-page"] ? $_GET["masonry-{$id}-page"] : 1;
-	$page = $page < 1 ? 1 : $page;
-	$pages = ceil(count($content) / $perPage);
-	$start = $perPage * ($page-1);
-	$end = $start + $perPage;
-	if($end > count($content))
-	{
-		$end = count($content);
-	}
-	
-	
 	$str = "<div class=\"masonry-container\"><div id=\"masonry-grid-{$id}\">";
-	
-	$ids = array_keys($content);
-	for($i = $start; $i <$end; ++$i)
+	foreach($content as &$c)
 	{
-		$c = $content[$ids[$i]];
 		$str .= "<div class=\"{$class}\">".call_user_func($handle, $c)."</div>";
 	}
-	$str .= "</div>";
-	$str .= "<div id=\"masonry-{$id}-nav\">";
-	
-	$link = "//" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
-	
-	if($page > 1)
-	{	
-		$prev = add_query_arg(array("masonry-{$id}-page" => $page-1), $link);
-		$str .= "<a id=\"masonry-{$id}-nav-previous\" href=\"{$prev}\" style=\"float: left;\">".__('Previous', 'nodistractions')."</a>";
-	}
-	
-	if($page < $pages)
-	{
-		$next = add_query_arg(array("masonry-{$id}-page" => $page+1), $link);
-		$str .= "<a id=\"masonry-{$id}-nav-next\" href=\"{$next}\" style=\"float: right;\">".__('Next', 'nodistractions')."</a>";
-	}
-	
-	$pageLink = add_query_arg(array("masonry-{$id}-page" => ""), remove_query_arg("masonry-{$id}-page", $link));
-	$pageLink .= "=";
-	
 	$str .= "</div></div>";
-	
-	$finishedMsg = __('No more images to load.', 'nodistractions');
-	$msgText = __('Loading next set of images...', 'nodistractions');
-	
-	$loadingIconPath = get_stylesheet_directory_uri() . "/images/loading.gif";
-	
+
 	$str .= <<<EX
 		<script type="text/javascript">
-		
+
 		var minGridSize = {$minGridWidth};
 		var gutterSize = {$gutterSize};
-		
+
 		var \$container = \$('#masonry-grid-{$id}');
-		
 
 		var gridSize = function()
 		{
@@ -267,17 +227,6 @@ function gallery($id, $class, $perPage, $content, $handle, $minGridWidth=450, $g
 		
 		\$(window).resize(gridSize);
 		
-		// Masonry + ImagesLoaded
-		//\$container.imagesLoaded(function(){
-		//	gridSize();
-		//	\$container.masonry({
-		//		// selector for entry content
-		//		itemSelector: '.{$class}',
-		//		gutter: gutterSize
-		//	});
-		//	\$container.css('visibility', 'visible');
-		//});
-		
 		$(document).ready(function()
 		{
 			setTimeout(function()
@@ -290,34 +239,6 @@ function gallery($id, $class, $perPage, $content, $handle, $minGridWidth=450, $g
 				});
 				\$container.masonry('layout');
 			}, 100);
-		});
-		
-		\$container.infinitescroll({
-			navSelector: "#masonry-{$id}-nav",
-			nextSelector: "#masonry-{$id}-nav-next",
-			itemSelector: '.{$class}',
-			pathParse: undefined,
-			path: ['{$pageLink}', ''],
-			bufferPx: 3000,
-			loading: {
-				finishedMsg: '{$finishedMsg}',
-				msgText: '{$msgText}',
-				img: '{$loadingIconPath}'
-			}
-		},
-		// trigger Masonry as a callback
-		function( newElements ) {
-			
-			// hide new items while they are loading
-			var \$newElems = \$( newElements ).css({ opacity: 0 });
-			// ensure that images load before adding to masonry layout
-			\$newElems.imagesLoaded(function(){
-				// show elems now they're ready
-				gridSize();
-				\$newElems.animate({ opacity: 1 });
-				\$container.masonry( 'appended', \$newElems, true ); 
-				if(typeof doLightBox !== 'undefined' && typeof jQuery !== 'undefined'){ doLightBox(); }
-			});
 		});
 	</script>
 EX;
