@@ -15,7 +15,7 @@
 		 * This is for a horizontal menu / widget bar that will 
 		 * collapse to the bottom of the page on small screens.
 		 */
-		if("footer" == get_theme_mod('nodistractions_menu_widgets_location', NODISTRACTIONS_MENU_WIDGETS_LOCATION))
+		if((is_home() || is_single()) && "footer" == get_theme_mod('nodistractions_menu_widgets_location', NODISTRACTIONS_MENU_WIDGETS_LOCATION))
 		{
 			echo "<div class=\"footer-widget-area\">";
 			echo "<div class=\"widget-area-container\">";

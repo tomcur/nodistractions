@@ -4,7 +4,12 @@
  * Handles toggling the navigation menu for small screens and enables tab
  * support for dropdown menus.
  */
-( function( $ ) {
+( function() {
+    // Fix WPGlobus' classes
+	$('.wpglobus-current-language').addClass('menu-item').addClass('menu-item-has-children').removeClass('wpglobus-current-language');
+	//$('.sub_menu_item_wpglobus_menu_switch').addClass('menu-item').removeClass('sub_menu_item_wpglobus_menu_switch');
+	
+    
 	// Add dropdown toggle that display child menu items.
 	$( '.main-navigation .menu-item-has-children > a' ).after( '<div><button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button></div>' );
 	
@@ -167,7 +172,6 @@
 		
 		if(viewport.width < 890)
 		{
-			console.log('test');
 			container.css('height', $(window).height() - (container.position().top + container.parent().position().top));
 			if(!container.hasClass('mobile'))
 			{
@@ -281,4 +285,4 @@
 			return prevent();
 		}
 	});
-} )(jQuery);
+} )();

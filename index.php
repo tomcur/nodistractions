@@ -13,6 +13,17 @@
 
 get_header(); ?>
 
+<style type="text/css">
+@media screen and (min-width: 890px) 
+{
+	.site-content
+	{
+		width: 70%;
+		float: left;
+	}
+}
+</style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

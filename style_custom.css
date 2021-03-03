@@ -1,31 +1,219 @@
-.big .content-area
+.entry-content
 {
 	max-width: 100% !important;
 }
 
-article.big
+.site-content
 {
-	max-width: 100% !important;
+	float: none;
+	width: auto;
 }
 
-.entry-content img.latex_block
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Homepage
+# Gallery
+	## Simple gallery
+	## Books gallery
+	## Downloads gallery
+# Book page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Homepage
+--------------------------------------------------------------*/
+.homepage-landing
 {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-position: center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	cursor: pointer;
+}
+
+#homepage-enter-container
+{
+	position: fixed;
+	top: 5%;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
+
+#homepage-enter a
+{
+	color: #ffffff; 
+	font-weight: normal;
+	font-size: 1em;
+	letter-spacing: 10px;
+	opacity: 0.7; 
+	filter: alpha(opacity=70);
+	text-shadow: 0px 0px 5px rgba(0,0,0, 1);
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Simple gallery
+--------------------------------------------------------------*/
+.grid-item
+{
+	max-width: 480px;
+	width: 100%;
+}
+
+.grid-item img
+{
+	width: 100%;
+	margin-bottom: 3px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
-.sidebar-site-header
+/*--------------------------------------------------------------
+## Books gallery
+--------------------------------------------------------------*/
+.grid-item-books-gallery
 {
-	background-color: #345696;
+	max-width: 250px;
+	width: 100%;
+	box-shadow: 0px 2px 6px rgba(100, 100, 100, 0.3);
+	margin-bottom: 25px;
 }
 
-.secondary-toggle
+.grid-item-books-gallery img
 {
-	background-color: #345696 !important;
+	width: 100%;
+	display: block;
 }
 
-.secondary-toggle:hover
+.grid-item-books-gallery-header
 {
-	background-color: #3e66b0 !important;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.grid-item-books-gallery-header h3
+{
+	font-weight: normal;
+}
+
+.grid-item-books-gallery-flavor
+{
+	border-top: 1px solid #efefef;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 0.90rem;
+}
+
+.grid-item-books-gallery-link
+{
+	background-color: #fbfbfb;
+	padding: 5px;
+	font-size: 0.9em;
+	text-align: right;
+	text-transform: uppercase;
+	font-family: "Vollkorn";
+}
+
+.grid-item-books-gallery-link a
+{
+	color: #888;
+}
+
+.grid-item-books-gallery-link a:hover
+{
+	color: #444;
+}
+
+
+/*--------------------------------------------------------------
+# Downloads gallery
+--------------------------------------------------------------*/
+.grid-item-downloads-gallery
+{
+	max-width: 250px;
+	width: 100%;
+	box-shadow: 0px 2px 6px rgba(100, 100, 100, 0.3);
+	margin-bottom: 25px;
+}
+
+.grid-item-downloads-gallery-container
+{
+	padding: 8px;
+	color: #fff;
+}
+
+.grid-item-downloads-gallery img
+{
+	width: 100%;
+	display: block;
+}
+
+.grid-item-downloads-gallery-header
+{
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.grid-item-downloads-gallery-header h3
+{
+	font-weight: normal;
+}
+
+.grid-item-downloads-gallery-flavor
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 0.75em;
+}
+
+.grid-item-downloads-gallery-link
+{
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 5px;
+	font-size: 0.9em;
+	text-align: right;
+	text-transform: uppercase;
+	font-family: "Vollkorn";
+}
+
+.grid-item-downloads-gallery-flavor a
+{
+	color: #d7f23d;
+}
+
+.grid-item-downloads-gallery-flavor a:hover
+{
+	color: #c0d936;
+}
+
+.grid-item-downloads-gallery-link a
+{
+	color: #fff;
+}
+
+.grid-item-downloads-gallery-link a:hover
+{
+	color: #bbb;
+}
+
+/*--------------------------------------------------------------
+# Book page
+--------------------------------------------------------------*/
+
+.book-information
+{
+	width: auto;
 }

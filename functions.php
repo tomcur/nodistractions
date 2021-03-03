@@ -199,6 +199,7 @@ function gallery($id, $class, $content, $handle, $minGridWidth=450, $gutterSize=
 
 		var \$container = \$('#masonry-grid-{$id}');
 
+
 		var gridSize = function()
 		{
 			var width = \$container.width();

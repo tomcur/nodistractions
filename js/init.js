@@ -1,7 +1,8 @@
-const eleHtml = document.getElementsByTagName('html')[0];
-eleHtml.classList.remove('no-js');
-eleHtml.classList.add('js');
-
-document.addEventListener("DOMContentLoaded", function() {
-    eleHtml.classList.remove('load');
-});
+(function() 
+{
+	$('html').removeClass('no-js').addClass('js').delay(100).queue(function(next)
+	{
+		$(this).removeClass('load');
+		next();
+	});
+})();

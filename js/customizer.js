@@ -66,7 +66,7 @@
 	// Sidebar background color
 	wp.customize( 'nodistractions_sidebar_background_color', function( value ) {
 		value.bind( function( to ) {
-			$('.menu-widget-area.widget-area-container').css( {
+			$('.sidebar').css( {
 				'backgroundColor': to
 			});
 		});

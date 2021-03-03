@@ -1,17 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anita Bijsterbosch Theme\n"
-"POT-Creation-Date: 2015-06-07 02:59+0100\n"
-"PO-Revision-Date: 2015-06-07 03:01+0100\n"
+"POT-Creation-Date: 2017-03-21 20:38+0100\n"
+"PO-Revision-Date: 2017-03-21 20:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
-"X-Poedit-Basepath: C:\\xampp\\htdocs\\anita\\wp-content\\themes"
-"\\nodistractions\\\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx:4c,1,2;esc_attr__;esc_attr_e;"
 "esc_attr_x;esc_html__;esc_html_e;esch_html_x;_n_noop:1,2;"
@@ -37,7 +36,7 @@ msgstr "Meestgebruikte categorie&euml;n"
 #: 404.php:44
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Probeer te kijken in de maandelijke archieven. %1$s"
+msgstr "Probeer te kijken in de maandelijkse archieven. %1$s"
 
 #: comments.php:29
 #, php-format
@@ -67,53 +66,140 @@ msgstr "Reacties zijn gesloten."
 msgid "Primary Menu"
 msgstr "Hoofdmenu"
 
-#: functions.php:100
+#: functions.php:46
+msgid "Social Links Menu"
+msgstr "Sociale-mediamenu"
+
+#: functions.php:119
 msgid "Sidebar"
 msgstr "Zijbalk"
 
-#: functions.php:230
-msgid "Original Edition"
-msgstr "Originele versie"
+#: functions.php:145
+msgid "expand child menu"
+msgstr "menu uitklappen"
 
-#: functions.php:243
-msgid "Title"
-msgstr "Titel"
+#: functions.php:146
+msgid "collapse child menu"
+msgstr "menu inklappen"
 
-#: functions.php:244
-msgid "Publisher"
-msgstr "Uitgever"
-
-#: functions.php:245
-msgid "ISBN"
-msgstr "ISBN"
-
-#: functions.php:261
-msgid "Languages"
-msgstr "Talen"
-
-#: functions.php:310
+#: functions.php:214
 msgid "Previous"
 msgstr "Vorige"
 
-#: functions.php:316
+#: functions.php:220
 msgid "Next"
 msgstr "Volgende"
 
-#: functions.php:324
+#: functions.php:228
 msgid "No more images to load."
 msgstr "Er zijn geen verdere afbeeldingen om te laden."
 
-#: functions.php:325
+#: functions.php:229
 msgid "Loading next set of images..."
 msgstr "De volgende afbeeldingen worden geladen..."
+
+#: functions_custom.php:88
+msgid "Original Edition"
+msgstr "Originele versie"
+
+#: functions_custom.php:101
+msgid "Title"
+msgstr "Titel"
+
+#: functions_custom.php:102
+msgid "Publisher"
+msgstr "Uitgever"
+
+#: functions_custom.php:103
+msgid "ISBN"
+msgstr "ISBN"
+
+#: functions_custom.php:119
+msgid "Translations"
+msgstr "Vertalingen"
 
 #: header.php:48
 msgid "Skip to content"
 msgstr "Ga naar inhoud"
 
-#: header.php:66
-msgid "Navigation"
-msgstr "Navigatie"
+#: inc/customizer.php:49
+msgid "Site Title Color"
+msgstr "Kleur sitetitel"
+
+#: inc/customizer.php:61
+msgid "Site title Hover Color"
+msgstr "Zweefkleur sitetitel"
+
+#: inc/customizer.php:73
+msgid "Page Background Color"
+msgstr "Achtergrondkleur pagina"
+
+#: inc/customizer.php:85
+msgid "Header Background Color"
+msgstr "Achtergrondkleur header"
+
+#: inc/customizer.php:97
+msgid "Sidebar Background Color"
+msgstr "Achtergrondkleur sidebar"
+
+#: inc/customizer.php:109
+msgid "Menu Background Color"
+msgstr "Achtergrondkleur menu"
+
+#: inc/customizer.php:121
+msgid "Widgets Background Color"
+msgstr "Achtergrondkleur widgets"
+
+#: inc/customizer.php:133
+msgid "Content Background Color"
+msgstr "Achtergrondkleur inhoud"
+
+#: inc/customizer.php:145
+msgid "Link Color"
+msgstr "Kleur links"
+
+#: inc/customizer.php:157
+msgid "Link Hover Color"
+msgstr "Zweefkleur links"
+
+#: inc/customizer.php:164
+msgid "Mobile Site Settings"
+msgstr "Mobiele-websitesettings"
+
+#: inc/customizer.php:174
+msgid "Header Icon"
+msgstr "Icoon header"
+
+#: inc/customizer.php:181
+msgid "Menu Settings"
+msgstr "Menusettings"
+
+#: inc/customizer.php:193
+msgid "Menu Orientation"
+msgstr "Ori&euml;ntatie Menu"
+
+#: inc/customizer.php:210
+msgid "Menu Float"
+msgstr "Zweefrichting Menu"
+
+#: inc/customizer.php:211
+msgid ""
+"Location of menu relative to the content (only relevant for vertical menus)."
+msgstr ""
+"Locatie van menu relatief aan de content (enkel relevant voor verticale "
+"menus)."
+
+#: inc/customizer.php:228
+msgid "Widgets Location"
+msgstr "Locatie Widgets"
+
+#: inc/customizer.php:245
+msgid "Widgets Float"
+msgstr "Zweefrichting Widgets"
+
+#: inc/customizer.php:246
+msgid "Location of widgets relative to the content."
+msgstr "Locatie van widgets relatief aan de content."
 
 #: inc/extras.php:52
 #, php-format
@@ -136,81 +222,96 @@ msgstr "Nieuwe berichten"
 msgid "Post navigation"
 msgstr "Berichtnavigatie"
 
-#: inc/template-tags.php:108 inc/template-tags.php:114
+#: inc/template-tags.php:86
+msgid "Posted on"
+msgstr "Geplaatst op"
+
+#: inc/template-tags.php:103
+msgid "Format"
+msgstr "Formaat"
+
+#: inc/template-tags.php:112 inc/template-tags.php:139
+#: inc/template-tags.php:147
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:110
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Geplaatst in %1$s"
-
-#: inc/template-tags.php:116
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Getagd als %1$s"
-
 #: inc/template-tags.php:122
+msgid "Author"
+msgstr "Auteur"
+
+#: inc/template-tags.php:142
+msgid "Categories"
+msgstr "Categorie&euml;n"
+
+#: inc/template-tags.php:150
+msgid "Tags"
+msgstr "Tags"
+
+#: inc/template-tags.php:161
+msgid "Full size"
+msgstr "Volledige grootte"
+
+#: inc/template-tags.php:171
 msgid "Leave a comment"
 msgstr "Laat een reactie achter"
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:171
 msgid "1 Comment"
 msgstr "1 reactie"
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:171
 msgid "% Comments"
 msgstr "% reacties"
 
-#: inc/template-tags.php:126 template-parts/content-page.php:26
+#: inc/template-tags.php:175 template-parts/content-page.php:38
 msgid "Edit"
 msgstr "Aanpassen"
 
-#: inc/template-tags.php:143
+#: inc/template-tags.php:192
 #, php-format
 msgid "Category: %s"
 msgstr "Categorie: %s"
 
-#: inc/template-tags.php:145
+#: inc/template-tags.php:194
 #, php-format
 msgid "Tag: %s"
 msgstr "Tag: %s"
 
-#: inc/template-tags.php:147
+#: inc/template-tags.php:196
 #, php-format
 msgid "Author: %s"
 msgstr "Auteur: %s"
 
-#: inc/template-tags.php:149
+#: inc/template-tags.php:198
 #, php-format
 msgid "Year: %s"
 msgstr "Jaar: %s"
 
-#: inc/template-tags.php:151
+#: inc/template-tags.php:200
 #, php-format
 msgid "Month: %s"
 msgstr "Maand: %s"
 
-#: inc/template-tags.php:153
+#: inc/template-tags.php:202
 #, php-format
 msgid "Day: %s"
 msgstr "Dag: %s"
 
-#: inc/template-tags.php:175
+#: inc/template-tags.php:224
 #, php-format
 msgid "Archives: %s"
 msgstr "Archieven: %s"
 
-#: inc/template-tags.php:179
+#: inc/template-tags.php:228
 #, php-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: inc/template-tags.php:181
+#: inc/template-tags.php:230
 msgid "Archives"
 msgstr "Archieven"
 
-#: page-home.php:35
+#: page-home.php:42
 msgid "ENTER"
 msgstr "ENTER"
 
@@ -219,11 +320,11 @@ msgstr "ENTER"
 msgid "Search Results for: %s"
 msgstr "Zoekresultaten voor: %s"
 
-#: template-books-gallery.php:51
+#: template-books-gallery.php:52
 msgid "more information"
 msgstr "meer informatie"
 
-#: template-downloads-gallery.php:48
+#: template-downloads-gallery.php:54
 msgid "Permalink"
 msgstr "Permalink"
 
@@ -254,15 +355,40 @@ msgstr ""
 "Het ziet er naar uit dat we niet niet hebben gevonden waar je voor keek. "
 "Misschien helpt zoeken."
 
-#: template-parts/content-page.php:19 template-parts/content-single.php:23
+#: template-parts/content-page.php:17 template-parts/content-single.php:20
+#, php-format
+msgid "Page %d of %d"
+msgstr "Pagina %d van %d"
+
+#: template-parts/content-page.php:27 template-parts/content-single.php:30
 #: template-parts/content.php:32
 msgid "Pages:"
 msgstr "Pagina's:"
 
+#: template-parts/content-page.php:31 template-parts/content-single.php:34
+#: template-parts/content.php:36
+msgid "Page"
+msgstr "Pagina"
+
 #: template-parts/content.php:25
 #, php-format
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Lees %s verder <span class=\"meta-nav\">&rarr;</span>"
+msgid "Continue reading %s"
+msgstr "Lees %s verder"
+
+#~ msgid "translations"
+#~ msgstr "vertalingen"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigatie"
+
+#~ msgid "Posted in %1$s"
+#~ msgstr "Geplaatst in %1$s"
+
+#~ msgid "Tagged %1$s"
+#~ msgstr "Getagd als %1$s"
+
+#~ msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Lees %s verder <span class=\"meta-nav\">&rarr;</span>"
 
 #~ msgid "One thought on &ldquo;%2$s&rdquo;"
 #~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
